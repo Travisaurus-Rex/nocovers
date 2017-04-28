@@ -59,7 +59,7 @@ router.get('/all', (req, res) => {
 	
 });
 
-router.get('/recent', (req, res) => {
+router.get('https://warm-beyond-96861.herokuapp.com/recent', (req, res) => {
 
 	MongoClient.connect(url, (err, db) => {
 
