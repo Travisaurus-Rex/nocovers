@@ -1,0 +1,32 @@
+<div *ngIf="book" class="container">
+	<div class="top-level">
+		<div class="flip-container">
+			<div class="flipper" [@revealCover]="state">
+				<div class="front {{book.genre[0]}}">
+					<div class="front-cover-container">
+					  <h1 class="cover-genre">{{book.genre[0]}}</h1>
+						<button (click)="revealCover()" class="cover-button {{book.genre[0]}}-text">show cover</button>
+					</div>
+				</div> 
+				<div class="back">
+					<img class="cover" [src]="book.image"/>
+				</div> 
+			</div>
+		</div>
+		<div class="top-level-meta">
+			<h1 class="title-meta">{{ book.title }}</h1>
+			<div>
+				<h3 class="author-meta">written by <span class="author-name">{{ book.author }}</span></h3>
+			</div>
+			<h3 class="short-summary-h3">Short Summary</h3>
+			<div class="short-summary">
+				{{book.plotShort}}
+			</div>
+			<h5>{{ book.pages }} pages</h5>
+			<div style="margin-top: 24px; position: relative; left: -3px"><span class="tag-text {{book.genre[0]}}" *ngFor="let t of book.tags">{{t}}</span></div>
+		</div>
+	</div>
+	<div class="book">
+		<div class="long-plot" [innerHTML]="book.plotLong"></div>
+	</div>
+</div>

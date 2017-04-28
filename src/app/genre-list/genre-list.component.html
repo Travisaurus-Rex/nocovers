@@ -1,0 +1,5 @@
+<div *ngIf="genres">
+	<div *ngFor="let genre of genres" class="genre {{genre}}">
+		<h3>{{genre | uppercase}}</h3>
+	</div>
+</div>

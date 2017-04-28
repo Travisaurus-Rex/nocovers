@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito|Lato');
+
+@font-face {
+  font-family: 'LogoFont';
+  src: url('assets/fonts/vendetta_2/Vendetta.otf'); 
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,a,button {
+	font-family: 'Nunito', sans-serif;
+}
+
+.horror {
+	background-color: black;
+}
+
+.humor {
+	background-color: #EDB81A;
+}
+
+.sci-fi {
+	background-color: #60C492;
+}
+
+.fantasy {
+	background-color: #723DE3;
+}
+
+.mystery {
+	background-color: #E66767;
+}
+
+.adventure {
+	background-color: #40B6FF;
+}
+
+.horror-text, .humor-text, .sci-fi-text, .fantasy-text, .adventure-text, .mystery-text {
+	color: white;
+}
+
+.horror-text:hover {
+	color: black;
+}
+
+.humor-text:hover {
+	color: #EDB81A;
+}
+
+.sci-fi-text:hover {
+	color: #60C492;
+}
+
+.fantasy-text:hover {
+	color: #723DE3;
+}
+
+.mystery-text:hover {
+	color: #E66767;
+}
+
+.adventure-text:hover {
+	color: #40B6FF;
+}

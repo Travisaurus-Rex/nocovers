@@ -1,0 +1,121 @@
+header {
+	width: 1200px;
+	height: 80px;
+	z-index: 9999;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+
+.logo-title {
+	display: inline;
+	font-family: LogoFont;
+	color: black;
+	font-weight: 100;
+}
+
+nav {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 12px;
+	font-size: 21px;
+}
+
+.nav-link-li {
+	display: inline-block;
+	padding: 0;
+}
+
+.nav-link-a {
+	text-decoration: none;
+	color: black;
+	position: relative;
+	top: 22px;
+	letter-spacing: 2px;
+	padding: 20px 20px;
+}
+
+.nav-link-a:after {
+	content: "";
+	display: block;
+	background-color: red;
+	position: absolute;
+	bottom: -10px;
+	height: 5px;
+	width: 0%;
+	transition: all 0.15s ease-in-out;
+}
+
+.nav-link-a:hover {
+	color: red;
+}
+
+.nav-link-a:hover:after {
+	width: 100%;
+}
+
+.nav-link-a:visted {
+	color: black;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.subgenres {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	display: none;
+	vertical-align: top;
+	padding: 8px 0;
+	margin: 0;
+	background-color: white;
+	box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+	z-index: 9999;
+}
+
+.subgenre {
+	list-style: none;
+	background-color: transparent;
+}
+
+.subgenre-a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 14px 26px;
+}
+
+.subgenre:hover .subgenre-a {
+	color: white;
+}
+
+.horror:hover {
+	background-color: black;
+}
+
+.humor:hover {
+	background-color: #EDB81A;
+}
+
+.sci-fi:hover {
+	background-color: #60C492;
+}
+
+.fantasy:hover {
+	background-color: #723DE3;
+}
+
+.mystery:hover {
+	background-color: #E66767;
+}
+
+.adventure:hover {
+	background-color: #40B6FF;
+}
+
+.dropdown:hover .subgenres {
+	display: block;
+}
