@@ -56,6 +56,8 @@ router.get('https://warm-beyond-96861.herokuapp.com/all', (req, res) => {
 			db.close();
 		}
 	})
+
+	console.log("Go fuck yourself");
 	
 });
 
