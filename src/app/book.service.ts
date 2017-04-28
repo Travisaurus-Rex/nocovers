@@ -10,7 +10,7 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class BookService {
 
-  url: string = 'http://localhost:3000/api';
+  url: string = '/api';
 
   constructor(private http: Http) { }
 
