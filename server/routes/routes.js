@@ -4,7 +4,7 @@ const mongodb     = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 const url         = "mongodb://bookuser:bookpass10@ds135700.mlab.com:35700/no-covers";
 
-router.get('/genre', (req, res) => {
+router.get('https://warm-beyond-96861.herokuapp.com/genre', (req, res) => {
 
 	MongoClient.connect(url, (err, db) => {
 		if (err) {
@@ -25,7 +25,7 @@ router.get('/genre', (req, res) => {
 });
 
 // get books that only match the genre parameter
-router.get('/genre/:genre', (req, res) => {
+router.get('https://warm-beyond-96861.herokuapp.com/genre/:genre', (req, res) => {
 
 	let genre = req.params.genre.toLowerCase();
 
@@ -43,7 +43,7 @@ router.get('/genre/:genre', (req, res) => {
 });
 
 // get ALL books and let the client pick a random one
-router.get('/all', (req, res) => {
+router.get('https://warm-beyond-96861.herokuapp.com/all', (req, res) => {
 
 	MongoClient.connect(url, (err, db) => {
 		if (err) {
@@ -59,7 +59,7 @@ router.get('/all', (req, res) => {
 	
 });
 
-router.get('/recent', (req, res) => {
+router.get('https://warm-beyond-96861.herokuapp.com/recent', (req, res) => {
 
 	MongoClient.connect(url, (err, db) => {
 
@@ -78,7 +78,7 @@ router.get('/recent', (req, res) => {
 });
 
 // fetch a specific book
-router.get('/book/:title', (req, res) => {
+router.get('https://warm-beyond-96861.herokuapp.com/book/:title', (req, res) => {
 
 	let title = req.params.title.toLowerCase();
 
