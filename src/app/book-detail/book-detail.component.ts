@@ -20,9 +20,9 @@ import {
       state('reveal', style({
         transform: 'rotateY(-180deg)'
       })),
-      transition('hidden => reveal', animate(1000, keyframes([
+      transition('hidden => reveal', animate(600, keyframes([
         style({transform: 'rotateY(0deg)', offset: 0}),
-        style({transform: 'rotateY(25deg)', offset: 0.25}),
+        style({transform: 'rotateY(25deg)', offset: 0.45}),
         style({transform: 'rotateY(-205deg)', offset: 0.66}),
         style({transform: 'rotateY(-180deg)', offset: 1.0})
       ])))

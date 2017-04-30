@@ -8,6 +8,7 @@ const amazon      = require('amazon-product-api');
 // Create express app
 const app = express();
 
+/*
 const forceSSL = function() {
   return function (req, res, next) {
     if (req.headers['x-forwarded-proto'] !== 'https') {
@@ -20,6 +21,7 @@ const forceSSL = function() {
 }
 
 app.use(forceSSL());
+*/
 
 // Amazon client keys
 const client  = amazon.createClient({
